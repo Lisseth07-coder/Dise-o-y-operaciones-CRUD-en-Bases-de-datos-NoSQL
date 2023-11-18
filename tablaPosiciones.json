@@ -3,21 +3,21 @@
     "$oid": "61d74fd533c9f0547630c565"
   },
   "Posición": 1,
-  "Equipo": "Dinamit Out",
-  "Partidos Jugados": 2,
+  "Equipo": "Piratas",
+  "Partidos Jugados": 1,
   "Victorias": 1,
-  "Empates": 1,
+  "Empates": 0,
   "Derrotas": 0,
-  "Puntos": 4
+  "Puntos": 10
 },{
   "_id": {
     "$oid": "61d74ff533c9f0547630c566"
   },
   "Posición": 2,
-  "Equipo": "Rangers Sa",
-  "Partidos Jugados": 2,
+  "Equipo": "Cafeteros",
+  "Partidos Jugados": 1,
   "Victorias": 0,
-  "Empates": 1,
+  "Empates": 0,
   "Derrotas": 1,
-  "Puntos": 1
+  "Puntos": 0
 }]
