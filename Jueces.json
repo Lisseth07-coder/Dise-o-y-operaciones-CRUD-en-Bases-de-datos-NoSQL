@@ -1,0 +1,20 @@
+[{
+"_id": {
+    "$oid": "61d71e0d33c9f0547630c55a"
+},
+"Nombre": "Camilo Parra",
+"Edad": 20,
+"Cedula": 10196804567,
+"Celular": 3205690790,
+"Nacionalidad": "Colombiano"
+},{
+"_id": {
+    "$oid": "61d71ed833c9f0547630c55b"
+},
+"Nombre": "David Castro",
+"Edad": 19,
+"Cedula": 10689765436,
+"Celular": 3146789077,
+"Nacionalidad": "Colombiano"
+
+}]

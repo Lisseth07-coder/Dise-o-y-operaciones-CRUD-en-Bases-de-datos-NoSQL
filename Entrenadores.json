@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "61d74c9833c9f0547630c561"
+  },
+  "Nombres": "Fernando Caro",
+  "Edad": 30,
+  "Cedula": 1070919222,
+  "Celular": 3214453344,
+  "Equipo": "Piratas",
+  "Ciudad": "Bogotá"
+},{
+  "_id": {
+    "$oid": "61d74ced33c9f0547630c562"
+  },
+  "Nombres": "Danilo Fernandez",
+  "Edad": 35,
+  "Cedula": 10723344659,
+  "Celular": 3123346678,
+  "Equipo": "Cafeteros",
+  "Ciudad": "Manizales"
+}]

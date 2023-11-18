@@ -1,0 +1,62 @@
+#! a. Crear el torneo con fechas de inicio y final.
+db.periodoTorneo.insert({"Fecha Inicial":"19/11/2023","Fecha Final":"19/11/2023"})
+
+#! b. Inscribir, modificar y eliminar equipos.
+db.equipos.insert({"Nombre":"Equipo baloncesto","Ciudad":"Bogotá","Año":2015})
+
+db.equipos.update({_id:ObjectId("61d7add6272dcce41b4ba6cd")}, {$set:{"Ciudad":"Manizales"}})
+
+db.equipos.deleteOne({"_id": ObjectId("61d7add6272dcce41b4ba6cd")})
+
+#! c.Inscribir, modificar y eliminar deportistas a los equipos.
+db.deportistas.insert({"Nombres": "Alejandra Castro",
+                       "Edad": 9,
+                       "Identificación": 10895674356,
+                       "Celular": 3145637899,
+                       "Equipo": "Piratas",
+                       "Clasificación": 1,
+                       "Ciudad": "Bogotá" })
+
+db.deportistas.update({"_id": ObjectId("61d7214433c9f0547630c55c")},{
+                       $set: {
+                                "Nombres": "Piratas",
+                                "Apellidos": "Alejandra Castro"
+                            }
+                       })
+
+db.deportistas.deleteOne({"_id": ObjectId("61d7214433c9f0547630c55c")})
+
+#! d.Crear, modificar  y eliminar encuentros deportivos.
+db.encuentros.insert({"Fecha": "19/11/2023",
+                       "Hora": "8:00 am",
+                       "Lugar": "Coliseo cancha niños Bogotá",
+                       "Equipo Local": "Piratas",
+                       "Equipo Visitante": "Cafeteros",
+                       "Estado": "Jugando",
+                       "Resultado Final": "Victoria",
+                       "Arbitros": [
+                           "Camilo Parra",
+                           "David Castro"
+                       ]})
+
+db.encuentros.update({"_id": ObjectId("61d725fb33c9f0547630c55f")},{
+                       $set: {
+                                "Estado": "Terminado",
+                                "Resultado Final": "Perdido"
+                            }
+                       })
+
+db.encuentros.deleteOne({"_id": ObjectId("61d725fb33c9f0547630c55f")})
+
+
+#! e.Registrar resultados de eventos deportivos.
+db.tablaPosiciones.insert({"Posición": 1,
+                           "Equipo": "Piratas",
+                           "Partidos Jugados": 1,
+                           "Victorias": 1,
+                           "Empates": 0,
+                           "Derrotas": 0,
+                           "Puntos": 1})
+
+#! f.Reportar el ranking de los deportistas con mejor rendimiento
+db.deportistas.find({"Ranking": { $gte: 8 }}, {"_id": 0, "Nombres": 1, "Apellidos": 1, "Clasificación": 1}).sort({"Clasificación": -1})

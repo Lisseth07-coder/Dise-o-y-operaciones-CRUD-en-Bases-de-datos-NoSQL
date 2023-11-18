@@ -1,0 +1,10 @@
+#! Crear base de datos
+use TorneoDebaloncesto
+
+#! Crear colecciones
+db.createCollection("Deportistas")
+db.createCollection("Entrenadores")
+db.createCollection("Equipos")
+db.createCollection("Jueces")
+db.createCollection("Encuentros")
+db.createCollection("TablaPosiciones")

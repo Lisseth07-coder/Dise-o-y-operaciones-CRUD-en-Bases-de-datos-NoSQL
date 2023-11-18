@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "61d7214433c9f0547630c55c"
+  },
+  "Nombres": "Alejandra Castro",
+  "Edad": 9,
+  "Identificación": 10895674356,
+  "Celular": 3145637899,
+  "Equipo": "Piratas",
+  "Clasificación": 1,
+  "Ciudad": "Bogotá"
+},{
+  "_id": {
+    "$oid": "61d721be33c9f0547630c55d"
+  },
+  "Nombres": "Camila Paz",
+  "Edad": 8,
+  "Identificación": 10336789456,
+  "Celular": 3156787711,
+  "Equipo": "Piratas",
+  "Clasificación": 1,
+  "Ciudad": "Bogotá"
+},{
+  "_id": {
+    "$oid": "61d7846df5563ceee5822cfb"
+  },
+  "Nombres": "Andrea Gutierrez",
+  "Edad": 10,
+  "Identificación": 1004555633,
+  "Celular": 32309890077,
+  "Equipo": "Cafeteros",
+  "Clasificación": 2,
+  "Ciudad": "Manizales"
+},{
+  "_id": {
+    "$oid": "61d7847df5563ceee5822cfc"
+  },
+  "Nombres": "Salome Lopez",
+  "Edad": 8,
+  "Identificación": 109585849392,
+  "Celular": 3153344565,
+  "Equipo": "Cafeteros",
+  "Clasificación": 2,
+  "Ciudad": "Manizales"
+}]
